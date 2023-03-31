@@ -1,0 +1,48 @@
+.mountain-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 150px;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 55px;
+}
+
+.mountain-card__description-title {
+  margin: 0 0 4px;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.mountain-card__description-country {
+  margin: 0 0 20px;
+  color: #636365;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.mountain-card__description-text {
+  margin: 0 0 20px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 35px;
+}
+
+.mountain-card__img {
+  height: 250px;
+}
+
+.mountain-card__description-link {
+  display: inline-block;
+  width: 100px;
+  padding: 10px;
+  color: #28272A;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  background-color: #FEE251;
+  border-radius: 20px;
+  margin-bottom: 55px;
+}

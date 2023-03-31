@@ -1,0 +1,39 @@
+.container {
+  width: 1120px;
+  margin: 0 auto 95px;
+}
+
+.explore-mountain {
+  background-image:  
+    linear-gradient(
+      to bottom,
+      rgba(40, 39, 42, 1),
+      rgba(40, 39, 42, 1),
+      rgba(40, 39, 42, 1),
+      rgba(40, 39, 42, 0), 
+      rgba(40, 39, 42, 1), 
+      rgba(40, 39, 42, 1),
+      rgba(40, 39, 42, 1)
+    ), 
+    url(../../images/desert.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.explore-mountain-title {
+  margin-top: 0;
+  margin-bottom: 35px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.explore-mountain-description {
+  width: 380px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 80px;
+}

@@ -1,10 +1,9 @@
 .container {
   width: 1120px;
-  margin: 0 auto;
+  margin: 0 auto 95px;
 }
 
 .recommend {
-  margin-bottom: 95px;
   display: flex;
   justify-content: space-between;
 }
