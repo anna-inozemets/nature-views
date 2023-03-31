@@ -1,0 +1,42 @@
+.help {
+  height: 250px;
+  background-image: url(../../images/map.svg);
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center bottom 75%;
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+
+.help__subtitle {
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 10px 0 80px;
+}
+
+.help__input {
+  width: 300px;
+  padding: 10px;
+  margin-right: 15px;
+  color: #28272A;
+  font-weight: 400;
+  background-color: #ffffff;
+  border-radius: 30px;
+  border: none;
+}
+
+.help__btn {
+  width: 130px;
+  padding: 10px;
+  color: #28272A;
+  font-weight: 700;
+  background-color: #FEE251;
+  border-radius: 30px;
+  border: none;
+}

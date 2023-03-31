@@ -1,6 +1,6 @@
 .container {
   width: 1120px;
-  margin: 0 auto 95px;
+  margin: 0 auto;
 }
 
 .recommend {
@@ -50,6 +50,7 @@
 .recommend__info {
   display: flex;
   align-items: center;
+  margin-bottom: 95px;
 }
 
 .recommend__info-text {
