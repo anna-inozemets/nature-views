@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  padding: 0 85px;
+  background-color: #FEE251;
+}
+
+.footer__logo {
+  margin: 0;
+  color: #28272A;
+  font-weight: 700;
+  line-height: 65px;
+}
+
+.fotter__contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer__icon {
+  height: 14px;
+  width: 14px;
+}
