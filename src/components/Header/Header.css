@@ -1,0 +1,122 @@
+.header {
+  display: flex;
+  gap: 90px;
+  height: 100vh;
+  background-image: 
+    linear-gradient(to bottom, transparent, rgba(40, 39, 42, 1)), 
+    url("../../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.header__nav {
+  width: 210px;
+  height: calc(100vh - 65px);
+}
+
+.header__nav-logo {
+  width: 265px;
+  height: 65px;
+  background-color: #FEE251;
+}
+
+.header__nav-logo-text {
+  margin: 0;
+  padding-left: 45px;
+  color: #28272A;
+  font-weight: 700;
+  line-height: 65px;
+}
+
+.header__nav-list {
+  list-style: none;
+  padding: 45px 0 0 35px;
+  background-color: #28272A;
+  opacity: 0.8;
+  margin: 0;
+  height: 87%;
+}
+
+.header__nav-item {
+  margin-bottom: 30px;
+}
+
+.header__nav-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* .header__content {
+  
+} */
+
+.header__content-description {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  height: max-content;
+  width: 300px;
+}
+
+.header__content-title {
+  margin-top: 0;
+  margin-bottom: 35px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.header__content-text {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 30px;
+}
+
+.header__content-btn {
+  width: 95px;
+  padding: 10px;
+  color: #28272A;
+  font-weight: 700;
+  background-color: #FEE251;
+  border-radius: 13px;
+  border: none;
+}
+
+.header__content-nav {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+}
+
+.header__content-nav-btn {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ffffff;
+  color: #28272A;
+  margin-right: 10px;
+}
+
+.header__content-nav-text {
+  position: relative;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  margin-right: 20px;
+}
+
+.header__content-nav-decoration {
+  height: 1px;
+  width: 650px;
+  margin-right: 20px;
+  background-color: #ffffff;
+}
+
+.small {
+  width: 40px;
+}
