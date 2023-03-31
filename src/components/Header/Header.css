@@ -2,6 +2,7 @@
   display: flex;
   gap: 90px;
   height: 100vh;
+  margin-bottom: 75px;
   background-image: 
     linear-gradient(to bottom, transparent, rgba(40, 39, 42, 1)), 
     url("../../images/header.jpg");
@@ -10,7 +11,7 @@
 }
 
 .header__nav {
-  width: 210px;
+  width: 220px;
   height: calc(100vh - 65px);
 }
 
@@ -108,7 +109,7 @@
 
 .header__content-nav-decoration {
   height: 1px;
-  width: 650px;
+  width: 610px;
   margin-right: 20px;
   background-color: #ffffff;
 }

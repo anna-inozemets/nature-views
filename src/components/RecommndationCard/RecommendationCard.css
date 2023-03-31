@@ -1,0 +1,38 @@
+.card {
+  width: 250px;
+  margin-bottom: 45px;
+}
+
+.card__img {
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+.card__title {
+  margin: 0 0 4px;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.card__country {
+  margin: 0 0 20px;
+  color: #636365;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.card__description {
+  margin: 0 0 20px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 30px;
+}
+
+.card__link {
+  text-decoration: none;
+  color: #FEE251;
+  letter-spacing: 0.05em;
+}
