@@ -72,12 +72,12 @@
 }
 
 .header__content-btn {
-  width: 95px;
+  width: 100px;
   padding: 10px;
   color: #28272A;
   font-weight: 700;
   background-color: #FEE251;
-  border-radius: 13px;
+  border-radius: 20px;
   border: none;
 }
 

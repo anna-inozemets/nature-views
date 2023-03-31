@@ -3,6 +3,7 @@ import './App.css';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Recommendation } from './components/Recommendation';
+import { ExploreSea } from './components/ExploreSea';
 
 export const App = () => {
   return (
@@ -10,6 +11,7 @@ export const App = () => {
       <Header />
       <main>
         <Recommendation />
+        <ExploreSea />
       </main>
       <Footer />
     </>

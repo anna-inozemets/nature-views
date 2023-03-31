@@ -1,0 +1,53 @@
+.explore-sea {
+  margin-bottom: 115px;
+}
+
+.explore-sea__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.explore-sea__img {
+  width: 450px;
+  margin-right: 85px;
+}
+
+.explore-sea__info {
+  max-width: 350px;
+}
+
+.explore-sea__title {
+  margin-top: 0;
+  margin-bottom: 35px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.explore-sea__subtitle {
+  color: #ffffff;
+  margin: 0 0 35px;
+}
+
+.explore-sea__text {
+  width: 80%;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 30px;
+}
+
+.explore-sea__btn {
+  display: inline-block;
+  width: 100px;
+  padding: 10px;
+  color: #28272A;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  background-color: #FEE251;
+  border-radius: 20px;
+  border: none;
+}
