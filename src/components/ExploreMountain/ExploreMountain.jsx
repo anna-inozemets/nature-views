@@ -4,8 +4,8 @@ import { ExploreMountainCard } from '../ExploreMountainCard';
 
 export const ExploreMountain = () => {
   return (
-    <section className='section__explore-mountain explore-mountain'>
-      <div className="container">
+    <section className='section__explore-mountain'>
+      <div className="explore-mountain">
         <h2 className='explore-mountain-title'>
           Mountain Collections
         </h2>

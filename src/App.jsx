@@ -10,7 +10,7 @@ import { Help } from './components/Help';
 
 export const App = () => {
   return (
-    <>
+    <div className="main-container">
       <Header />
       <main>
         <Recommendation />
@@ -20,7 +20,7 @@ export const App = () => {
         <Help />
       </main>
       <Footer />
-    </>
+    </div>
   );
 };
 

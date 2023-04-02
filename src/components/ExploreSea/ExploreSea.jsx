@@ -4,7 +4,7 @@ import seaPath from '../../images/sea.jpg';
 
 export const ExploreSea = () => {
   return (
-    <section className='section__explore-sea explore-sea'>
+    <section id="explore" className='section__explore-sea explore-sea'>
       <div className="explore-sea__wrapper">
         <img 
           className='explore-sea__img' 

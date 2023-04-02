@@ -40,3 +40,46 @@
   border-radius: 30px;
   border: none;
 }
+
+@media screen and (min-width: 640px) and (max-width: 1200px) {
+  .help {
+    height: 200px;
+    margin-bottom: 0;
+  }
+  
+  .help__subtitle {
+    line-height: 16px;
+    margin: 10px 0 50px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+  .help {
+    height: auto;
+    margin-bottom: 45px;
+  }
+  
+  .help__subtitle {
+    margin: 10px 0 30px;
+  }
+
+  .help__action {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .help__input {
+    width: 100%;
+    font-size: 10px;
+    padding: 10px;
+    margin-right: 0;
+  }
+  
+  .help__btn {
+    width: 130px;
+    padding: 5px;
+    font-size: 10px;
+  }
+}

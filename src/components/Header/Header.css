@@ -10,15 +10,20 @@
   background-position: center;
 }
 
-.header__nav {
-  width: 220px;
-  height: calc(100vh - 65px);
-}
-
 .header__nav-logo {
+  display: flex;
   width: 265px;
   height: 65px;
   background-color: #FEE251;
+}
+
+.header__nav-open-menu {
+  display: none;
+}
+
+.header__nav {
+  width: 220px;
+  height: calc(100vh - 65px);
 }
 
 .header__nav-logo-text {
@@ -115,5 +120,214 @@
 }
 
 .small {
-  width: 40px;
+  width: 50px;
+}
+
+@media screen and (min-width: 640px) and (max-width: 1200px) {
+  .header {
+    gap: 45px;
+    margin-bottom: 60px;
+  }
+  
+  .header__nav-logo {
+    width: 200px;
+    height: 45px;
+  }
+  
+  .header__nav {
+    width: 170px;
+    height: calc(100vh - 45px);
+  }
+  
+  .header__nav-logo-text {
+    margin: 0;
+    padding-left: 25px;
+    font-weight: 700;
+    line-height: 45px;
+  }
+  
+  .header__nav-list {
+    padding: 35px 0 0 20px;
+    margin: 0;
+  }
+  
+  .header__nav-item {
+    margin-bottom: 15px;
+  }
+  
+  .header__nav-link {
+    font-size: 14px;
+  }
+  
+  .header__content-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 35px;
+  }
+  
+  .header__content-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 30px;
+  }
+  
+  .header__content-btn {
+    width: 100px;
+    padding: 7px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  
+  .header__content-nav-btn {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+  }
+  
+  .header__content-nav-text {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    margin-right: 20px;
+  }
+  
+  .header__content-nav-decoration {
+    width: 150px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 100vh;
+    margin-bottom: 45px;
+  }
+  
+  .header__nav-logo {
+    width: 100%;
+    height: 45px;
+  }
+
+  .header__nav-open-menu {
+    position: absolute;
+    top: 14px;
+    right: 35px;
+    display: none;
+  }
+
+  .header__nav-burger-icon {
+    position: absolute;
+    top: 17px;
+    right: 35px;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .header__nav-line {
+    display: block;
+    width: 15px;
+    height: 2px;
+    margin-bottom: 3px;
+    background-color: #28272A;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .header__nav-open-menu:checked ~ .header__nav-burger-icon .header__nav-line:nth-of-type(1) {
+    transform: rotate(45deg) translate(5px, 2px);
+  }
+  
+  .header__nav-open-menu:checked ~ .header__nav-burger-icon .header__nav-line:nth-of-type(2) {
+    opacity: 0;
+  }
+  
+  .header__nav-open-menu:checked ~ .header__nav-burger-icon .header__nav-line:nth-of-type(3) {
+    transform: rotate(-45deg) translate(5px, -3px);
+  }
+  
+  .header__nav {
+    width: 100%;
+    height: calc(100vh - 45px);
+    position: relative;
+    z-index: 1;
+  }
+  
+  .header__nav-logo-text {
+    padding-left: 35px;
+    line-height: 45px;
+  }
+  
+  .header__nav-list {
+    list-style: none;
+    padding: 45px 0 0 35px;
+    opacity: 1;
+    margin: 0;
+    height: 87%;
+
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+  }
+
+  .header__nav-open-menu:checked ~ .header__nav-list {
+    transform: translateX(0);
+  }
+  
+  .header__nav-item {
+    margin-bottom: 30px;
+  }
+  
+  .header__nav-link {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .header__content-description {
+    position: relative;
+    top: 0;
+    transform: translateY(-150%);
+    height: max-content;
+    width: 85%;
+    margin-left: 25px;
+  }
+  
+  .header__content-title {
+    margin: 0 0 15px;
+    font-size: 25px;
+    line-height: 27px;
+  }
+  
+  .header__content-text {
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 15px;
+  }
+  
+  .header__content-btn {
+    width: 85px;
+    padding: 5px;
+    font-size: 10px;
+    margin-bottom: 25px;
+  }
+  
+  .header__content-nav {
+    width: 85%;
+    margin-left: 25px;
+  }
+  
+  .header__content-nav-btn {
+    height: 20px;
+    width: 20px;
+  }
+  
+  .header__content-nav-text {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  
+  .header__content-nav-decoration {
+    width: 75%;
+  }
 }

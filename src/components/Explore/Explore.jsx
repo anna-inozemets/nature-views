@@ -4,7 +4,7 @@ import './Explore.css';
 export const Explore = () => {
   return (
     <section className='section__explore explore'>
-      <div className="container explore">
+      <div className="explore">
         <div className="explore__description">
           <h2 className='explore__description-title'>Editor&apos;s <br /> Pick</h2>
           <p className='explore__description-text'>

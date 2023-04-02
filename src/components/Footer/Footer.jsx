@@ -7,7 +7,7 @@ import facebook from '../../images/facebook.svg';
 export const Footer = () => {
   return (
     <footer>
-      <section className='section__fotter footer'>
+      <section className='section__footer footer'>
         <p className="footer__logo">
           trppd __
         </p>
