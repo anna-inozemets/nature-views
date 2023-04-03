@@ -10,6 +10,7 @@
 .footer__logo {
   margin: 0;
   color: #28272A;
+  text-decoration: none;
   font-size: 14px;
   font-weight: 700;
   line-height: 65px;
@@ -19,17 +20,28 @@
   font-size: 14px;
 }
 
-.fotter__contacts {
+.footer__contacts {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
 }
 
+.footer__contacts-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .footer__icon {
   padding: 3px;
   height: 14px;
   width: 14px;
+  transition: transform 0.5s ease;
+}
+
+.footer__icon:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (min-width: 640px) and (max-width: 1200px) {

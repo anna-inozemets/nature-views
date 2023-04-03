@@ -1,6 +1,5 @@
 import React from 'react';
 import './ExploreSea.css';
-import seaPath from '../../images/sea.jpg';
 
 export const ExploreSea = () => {
   return (
@@ -8,7 +7,7 @@ export const ExploreSea = () => {
       <div className="explore-sea__wrapper">
         <img 
           className='explore-sea__img' 
-          src={seaPath} 
+          src='/images/sea.jpg'
           alt="sea" 
         />
         <article className='explore-sea__info'>

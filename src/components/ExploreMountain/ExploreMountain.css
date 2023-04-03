@@ -71,9 +71,6 @@
         rgba(40, 39, 42, 1)
       ), 
       url(../../images/desert.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
   }
 
   .explore-mountain-title {

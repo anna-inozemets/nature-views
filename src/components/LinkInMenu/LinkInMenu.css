@@ -1,0 +1,37 @@
+.header__nav-link {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  opacity: 0.8;
+  padding: 3px;
+  width: 96%;
+  text-decoration: none;
+
+  transition: opacity 0.5s ease;
+}
+
+.header__nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 11px;
+  right: 0;
+  width: 20%;
+  height: 1px;
+  background-color: #ffffff;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.header__nav-link:hover {
+  opacity: 1;
+}
+
+.header__nav-link:hover::after {
+  opacity: 1;
+}
+
+@media screen and (min-width: 640px) and (max-width: 1200px) {
+  .header__nav-link {
+    font-size: 14px;
+  }
+}

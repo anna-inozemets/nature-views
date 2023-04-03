@@ -2,12 +2,23 @@ import React from 'react';
 import './Help.css';
 
 export const Help = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    event.target.reset();
+  };
+
   return (
-    <section className='section__help help'>
+    <section 
+      id='help' 
+      className='section__help help'
+      style={{
+        backgroundImage: 'url("/images/map.svg")'
+      }}
+    >
       <p className='help__subtitle'>
         Subscribe to our new letters
       </p>
-      <form action="mailto:trppd@gmail.com" className='help__action'>
+      <form className='help__action' onSubmit={(event) => handleSubmit(event)}>
         <input 
           type="email"
           placeholder='Your email'

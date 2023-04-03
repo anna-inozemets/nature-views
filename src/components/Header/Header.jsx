@@ -1,12 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Header.css';
 import { headerContent } from '../../api/headerContent';
+import { LinkInMenu } from '../LinkInMenu';
 
-
+const menuLinkTitles = ['Home', 'Recommendation', 'Explore', 'Help', 'About us'];
 
 export const Header = () => {
   const [lake, setLake] = useState(headerContent[0]);
   const [currentLakeIndex, setCurrentLakeIndex] = useState(0);
+  const [isOpenBurgerMenu, setIsOpenBurgerMenu] = useState(false);
+
+  const handleTogleMenu = () => {
+    setIsOpenBurgerMenu(!isOpenBurgerMenu);
+  };
+
+  const handleLinkClick = () => {
+    setIsOpenBurgerMenu(false);
+  };
 
   const handleClickPrev = () => {
     setCurrentLakeIndex((prevIndex) => (
@@ -22,40 +32,58 @@ export const Header = () => {
     setLake(headerContent[currentLakeIndex + 1]);
   };
 
+  useEffect(() => {
+    if (isOpenBurgerMenu) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  }, [isOpenBurgerMenu]);
+
   const isPrevBtnDisabled = currentLakeIndex === 0;
   const isNextButtonDisabled = currentLakeIndex === headerContent.length - 1;
 
   return (
     <header>
-      <section id="home" className='section__header header'>
-        <nav className='header__nav'>
+      <section 
+        id="home" 
+        className='section__header header'
+        style={{
+          backgroundImage: `linear-gradient(to bottom, transparent, rgba(40, 39, 42, 1)), url(${lake.imgPath})`
+        }}
+      >
+        <div className="header__contacts">
+          <a href="#explore" className="header__contacts-link header__contacts-link-collection">
+            My Collection
+          </a>
+          <a href="#" className="header__contacts-link">
+            Galih Pambudi
+          </a>
+        </div>
+        <nav className='header__nav' tabIndex={-1}>
           <div className="header__nav-logo">
-            <p className="header__nav-logo-text">
+            <a href='/' className="header__nav-logo-text">
               trppd __
-            </p>
-          </div>
-          <input type="checkbox" id="burger-menu" className='header__nav-open-menu' />
+            </a>
+          </div>          
+          <input 
+            type="checkbox" 
+            id="burger-menu" 
+            className='header__nav-open-menu'
+            checked={isOpenBurgerMenu}
+            onChange={handleTogleMenu}
+          />
           <label htmlFor="burger-menu" id="burger-icon" className='header__nav-burger-icon'>
             <span className="header__nav-line"></span>
             <span className="header__nav-line"></span>
             <span className="header__nav-line"></span>
           </label>
           <ul className='header__nav-list'>
-            <li className='header__nav-item'>
-              <a href="#" className='header__nav-link'>Home</a>
-            </li>
-            <li className='header__nav-item'>
-              <a href="#recommendation" className='header__nav-link'>Recommendation</a>
-            </li>
-            <li className='header__nav-item'>
-              <a href="#explore" className='header__nav-link'>Explore</a>
-            </li>
-            <li className='header__nav-item'>
-              <a href="#" className='header__nav-link'>Help</a>
-            </li>
-            <li className='header__nav-item'>
-              <a href="#" className='header__nav-link'>About us</a>
-            </li>
+            {menuLinkTitles.map(title => (
+              <li key={title} className='header__nav-item'>
+                <LinkInMenu text={title} handleClick={handleLinkClick} />
+              </li>
+            ))}
           </ul>
         </nav>
         <article className='header__content'>
@@ -66,9 +94,9 @@ export const Header = () => {
             <p className='header__content-text'>
               {lake.description}
             </p>
-            <button className='header__content-btn' type='button'>
+            <a href='#' className='header__content-btn' type='button'>
               Read more
-            </button>
+            </a>
           </div>
 
           <div className="header__content-nav">

@@ -32,9 +32,16 @@
 }
 
 .card__link {
+  display: inline-block;
+  padding: 2px;
   text-decoration: none;
   color: #FEE251;
   letter-spacing: 0.05em;
+  transition: text-shadow 0.5s ease;
+}
+
+.card__link:hover {
+  text-shadow: 2px 2px 4px rgba(254, 226, 81, 0.4);
 }
 
 @media screen and (min-width: 640px) and (max-width: 1200px) {

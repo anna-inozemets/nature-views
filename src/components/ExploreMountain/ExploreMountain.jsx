@@ -1,6 +1,7 @@
 import React from 'react';
 import './ExploreMountain.css';
 import { ExploreMountainCard } from '../ExploreMountainCard';
+import { exploreMountainContent } from '../../api/exploreMountainContent';
 
 export const ExploreMountain = () => {
   return (
@@ -14,9 +15,9 @@ export const ExploreMountain = () => {
         Whether you&apos;re an avid hiker or just love the beauty of nature, you&apos;ll be captivated 
         by the towering cliffs, sweeping vistas, and rugged beauty of our collection. Come explore with us today!
         </p>
-        <ExploreMountainCard />
-        <ExploreMountainCard />
-        <ExploreMountainCard />
+        {exploreMountainContent.map(card => (
+          <ExploreMountainCard key={card.id} card={card} />
+        ))}
       </div>
     </section>
   );
