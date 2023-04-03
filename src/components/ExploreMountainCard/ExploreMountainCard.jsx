@@ -12,18 +12,18 @@ export const ExploreMountainCard = ({ card }) => {
   } = card;
 
   return (
-    <article className='mountain-card'>
+    <article className="mountain-card">
       <div className="mountain-card__description">
-        <h4 className='mountain-card__description-title'>
+        <h4 className="mountain-card__description-title">
           {title}
         </h4>
-        <p className='mountain-card__description-country'>
+        <p className="mountain-card__description-country">
           {country}
         </p>
-        <p className='mountain-card__description-text'>
+        <p className="mountain-card__description-text">
           {descriptionFristPart}
         </p>
-        <p className='mountain-card__description-text mountain-card__description-text-part'>
+        <p className="mountain-card__description-text mountain-card__description-text-part">
           {descriptionSecondPart}
         </p>
         <a href="#" className="mountain-card__description-link">

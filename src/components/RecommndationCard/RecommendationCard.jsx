@@ -7,11 +7,11 @@ export const RecommendationCard = ({ card }) => {
 
   return (
     <div className="card">
-      <img className='card__img' src={imgPath} alt="card1" />
-      <h3 className='card__title'>{title}</h3>
-      <h4 className='card__country'>{country}</h4>
-      <p className='card__description'>{description}</p>
-      <a className='card__link' href="#">read more</a>
+      <img className="card__img" src={imgPath} alt="card1" />
+      <h3 className="card__title">{title}</h3>
+      <h4 className="card__country">{country}</h4>
+      <p className="card__description">{description}</p>
+      <a className="card__link" href="#">read more</a>
     </div>
   );
 };

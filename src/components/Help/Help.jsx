@@ -9,22 +9,22 @@ export const Help = () => {
 
   return (
     <section 
-      id='help' 
-      className='section__help help'
+      id="help"
+      className="section__help help"
       style={{
         backgroundImage: 'url("/images/map.svg")'
       }}
     >
-      <p className='help__subtitle'>
+      <p className="help__subtitle">
         Subscribe to our new letters
       </p>
-      <form className='help__action' onSubmit={(event) => handleSubmit(event)}>
+      <form className="help__action" onSubmit={(event) => handleSubmit(event)}>
         <input 
           type="email"
-          placeholder='Your email'
-          className='help__input'
+          placeholder="Your email"
+          className="help__input"
         />
-        <button type='submit' className='help__btn'>
+        <button type="submit" className="help__btn">
           Subscribe
         </button>
       </form>

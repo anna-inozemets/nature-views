@@ -14,9 +14,9 @@ export const ExploreCards = ({ exploreContent }) => {
         }}
       >
         <div className="images__image-description">
-          <h3 className='images__image-title'>{firstCard.title}</h3>
-          <p className='images__image-country'>{firstCard.country}</p>
-          <p className='images__image-text'>{firstCard.text}</p>
+          <h3 className="images__image-title">{firstCard.title}</h3>
+          <p className="images__image-country">{firstCard.country}</p>
+          <p className="images__image-text">{firstCard.text}</p>
         </div>
       </div>
       <div 
@@ -26,9 +26,9 @@ export const ExploreCards = ({ exploreContent }) => {
         }}
       >
         <div className="images__image-description">
-          <h3 className='images__image-title'>{secondCard.title}</h3>
-          <p className='images__image-country'>{secondCard.country}</p>
-          <p className='images__image-text'>{secondCard.text}</p>
+          <h3 className="images__image-title">{secondCard.title}</h3>
+          <p className="images__image-country">{secondCard.country}</p>
+          <p className="images__image-text">{secondCard.text}</p>
         </div>
       </div>
       <div 
@@ -38,9 +38,9 @@ export const ExploreCards = ({ exploreContent }) => {
         }}
       >
         <div className="images__image-description">
-          <h3 className='images__image-title'>{thirdCard.title}</h3>
-          <p className='images__image-country'>{thirdCard.country}</p>
-          <p className='images__image-text'>{thirdCard.text}</p>
+          <h3 className="images__image-title">{thirdCard.title}</h3>
+          <p className="images__image-country">{thirdCard.country}</p>
+          <p className="images__image-text">{thirdCard.text}</p>
         </div>
       </div>
       <div 
@@ -50,9 +50,9 @@ export const ExploreCards = ({ exploreContent }) => {
         }}
       >
         <div className="images__image-description">
-          <h3 className='images__image-title'>{fourthCard.title}</h3>
-          <p className='images__image-country'>{fourthCard.country}</p>
-          <p className='images__image-text'>{fourthCard.text}</p>
+          <h3 className="images__image-title">{fourthCard.title}</h3>
+          <p className="images__image-country">{fourthCard.country}</p>
+          <p className="images__image-text">{fourthCard.text}</p>
         </div>
       </div>
       <div 
@@ -62,9 +62,9 @@ export const ExploreCards = ({ exploreContent }) => {
         }}
       >
         <div className="images__image-description">
-          <h3 className='images__image-title'>{fivesCard.title}</h3>
-          <p className='images__image-country'>{fivesCard.country}</p>
-          <p className='images__image-text'>{fivesCard.text}</p>
+          <h3 className="images__image-title">{fivesCard.title}</h3>
+          <p className="images__image-country">{fivesCard.country}</p>
+          <p className="images__image-text">{fivesCard.text}</p>
         </div>
       </div>
     </div>

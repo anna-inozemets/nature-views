@@ -47,7 +47,7 @@ export const Header = () => {
     <header>
       <section 
         id="home" 
-        className='section__header header'
+        className="section__header header"
         style={{
           backgroundImage: `linear-gradient(to bottom, transparent, rgba(40, 39, 42, 1)), url(${lake.imgPath})`
         }}
@@ -60,63 +60,63 @@ export const Header = () => {
             Galih Pambudi
           </a>
         </div>
-        <nav className='header__nav' tabIndex={-1}>
+        <nav className="header__nav">
           <div className="header__nav-logo">
             <a href='#' className="header__nav-logo-text">
               trppd __
             </a>
-          </div>          
+          </div>
           <input 
-            type="checkbox" 
-            id="burger-menu" 
-            className='header__nav-open-menu'
+            type="checkbox"
+            id="burger-menu"
+            className="header__nav-open-menu"
             checked={isOpenBurgerMenu}
             onChange={handleTogleMenu}
           />
-          <label htmlFor="burger-menu" id="burger-icon" className='header__nav-burger-icon'>
+          <label htmlFor="burger-menu" id="burger-icon" className="header__nav-burger-icon">
             <span className="header__nav-line"></span>
             <span className="header__nav-line"></span>
             <span className="header__nav-line"></span>
           </label>
-          <ul className='header__nav-list'>
+          <ul className="header__nav-list">
             {menuLinkTitles.map(title => (
-              <li key={title} className='header__nav-item'>
+              <li key={title} className="header__nav-item">
                 <LinkInMenu text={title} handleClick={handleLinkClick} />
               </li>
             ))}
           </ul>
         </nav>
-        <article className='header__content'>
+        <article className="header__content">
           <div className="header__content-description">
-            <h1 className='header__content-title'>
+            <h1 className="header__content-title">
               {lake.title}
             </h1>
-            <p className='header__content-text'>
+            <p className="header__content-text">
               {lake.description}
             </p>
-            <a href='#' className='header__content-btn' type='button'>
+            <a href="#" className="header__content-btn" type="button">
               Read more
             </a>
           </div>
 
           <div className="header__content-nav">
             <button 
-              className='header__content-nav-prev header__content-nav-btn'
+              className="header__content-nav-prev header__content-nav-btn"
               onClick={handleClickPrev}
               disabled={isPrevBtnDisabled}
             >
               &lt;
             </button>
             <button 
-              className='header__content-nav-next header__content-nav-btn'
+              className="header__content-nav-next header__content-nav-btn"
               onClick={handleClickNext}
               disabled={isNextButtonDisabled}
             >
               &gt;
             </button>
-            <p className='header__content-nav-text'>Outdoors Edition</p>
+            <p className="header__content-nav-text">Outdoors Edition</p>
             <div className="header__content-nav-decoration"></div>
-            <p className='header__content-nav-text'>{currentLakeIndex + 1}/{headerContent.length}</p>
+            <p className="header__content-nav-text">{currentLakeIndex + 1}/{headerContent.length}</p>
             <div className="header__content-nav-decoration small"></div>
           </div>
         </article>
