@@ -49,7 +49,7 @@ export const Header = () => {
         id="home" 
         className='section__header header'
         style={{
-          backgroundImage: `linear-gradient(to bottom, transparent, rgba(40, 39, 42, 1)), url(%PUBLIC_URL%${lake.imgPath})`
+          backgroundImage: `linear-gradient(to bottom, transparent, rgba(40, 39, 42, 1)), url(${lake.imgPath})`
         }}
       >
         <div className="header__contacts">

@@ -7,7 +7,8 @@ export const ExploreSea = () => {
       <div className="explore-sea__wrapper">
         <img 
           className='explore-sea__img' 
-          src='/images/sea.jpg'
+          // eslint-disable-next-line no-undef
+          src={`${process.env.PUBLIC_URL}/images/sea.jpg`}
           alt="sea" 
         />
         <article className='explore-sea__info'>

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from 'react';
 import './Footer.css';
 
@@ -19,7 +20,7 @@ export const Footer = () => {
           >
             <img 
               className='footer__icon' 
-              src='/images/instagram.svg'
+              src={`${process.env.PUBLIC_URL}/images/instagram.svg`}
               alt="instagram" 
             />
           </a>
@@ -30,7 +31,7 @@ export const Footer = () => {
           >
             <img 
               className='footer__icon' 
-              src='/images/twitter.svg'
+              src={`${process.env.PUBLIC_URL}/images/twitter.svg`}
               alt="twitter" 
             />
           </a>
@@ -41,7 +42,7 @@ export const Footer = () => {
           >
             <img 
               className='footer__icon' 
-              src='/images/facebook.svg'
+              src={`${process.env.PUBLIC_URL}/images/facebook.svg`}
               alt="facebook" 
             />
           </a>
