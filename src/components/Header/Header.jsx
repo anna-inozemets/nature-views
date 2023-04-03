@@ -62,7 +62,7 @@ export const Header = () => {
         </div>
         <nav className='header__nav' tabIndex={-1}>
           <div className="header__nav-logo">
-            <a href='/' className="header__nav-logo-text">
+            <a href='#' className="header__nav-logo-text">
               trppd __
             </a>
           </div>          
