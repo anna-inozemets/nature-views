@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import './Header.css';
 import { headerContent } from '../../api/headerContent';
 import { LinkInMenu } from '../LinkInMenu';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const menuLinkTitles = ['Home', 'Recommendation', 'Explore', 'Help', 'About us'];
 
@@ -49,7 +52,7 @@ export const Header = () => {
         id="home" 
         className='section__header header'
         style={{
-          backgroundImage: `linear-gradient(to bottom, transparent, rgba(40, 39, 42, 1)), url(${lake.imgPath})`
+          backgroundImage: `linear-gradient(to bottom, transparent, rgba(40, 39, 42, 1)), url(%PUBLIC_URL%${lake.imgPath})`
         }}
       >
         <div className="header__contacts">
