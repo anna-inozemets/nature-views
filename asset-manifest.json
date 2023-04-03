@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/nature-views/static/css/main.bc10c423.css",
+    "main.js": "/nature-views/static/js/main.37e41274.js",
+    "static/media/desert.jpg": "/nature-views/static/media/desert.8c683c626564624d89fb.jpg",
+    "index.html": "/nature-views/index.html",
+    "main.bc10c423.css.map": "/nature-views/static/css/main.bc10c423.css.map",
+    "main.37e41274.js.map": "/nature-views/static/js/main.37e41274.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc10c423.css",
+    "static/js/main.37e41274.js"
+  ]
+}
