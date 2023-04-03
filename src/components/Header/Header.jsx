@@ -2,9 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './Header.css';
 import { headerContent } from '../../api/headerContent';
 import { LinkInMenu } from '../LinkInMenu';
-import dotenv from 'dotenv';
-
-dotenv.config();
 
 const menuLinkTitles = ['Home', 'Recommendation', 'Explore', 'Help', 'About us'];
 
