@@ -1,0 +1,131 @@
+.explore-sea {
+  margin-bottom: 115px;
+}
+
+.explore-sea__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.explore-sea__img {
+  width: 450px;
+  margin-right: 85px;
+}
+
+.explore-sea__info {
+  max-width: 350px;
+}
+
+.explore-sea__title {
+  margin-top: 0;
+  margin-bottom: 35px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.explore-sea__subtitle {
+  color: #ffffff;
+  margin: 0 0 35px;
+}
+
+.explore-sea__text {
+  width: 80%;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 30px;
+}
+
+.explore-sea__btn {
+  display: inline-block;
+  width: 100px;
+  padding: 10px;
+  color: #28272A;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  background-color: #FEE251;
+  border-radius: 20px;
+  border: none;
+
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+.explore-sea__btn:hover {
+  color: #FEE251;
+  background-color: #28272A;
+}
+
+
+@media screen and (min-width: 640px) and (max-width: 1200px) {
+  .explore-sea {
+    margin-bottom: 75px;
+  }
+  
+  .explore-sea__img {
+    width: 250px;
+    margin-right: 65px;
+  }
+  
+  .explore-sea__info {
+    max-width: 300px;
+  }
+  
+  .explore-sea__title {
+    margin-bottom: 15px;
+    font-size: 25px;
+  }
+  
+  .explore-sea__subtitle {
+    margin: 0 0 15px;
+    font-size: 12px;
+  }
+  
+  .explore-sea__text {
+    width: 90%;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+  .explore-sea {
+    padding: 0 35px;
+    margin-bottom: 45px;
+  }
+  
+  .explore-sea__img {
+    display: none;
+  }
+
+  .explore-sea__info {
+    max-width: 100%;
+  }
+  
+  .explore-sea__title {
+    margin: 0 0 15px;
+    font-size: 30px;
+  }
+  
+  .explore-sea__subtitle {
+    margin: 0 0 15px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+  
+  .explore-sea__text {
+    width: 100%;
+    font-size: 10px;
+    line-height: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .explore-sea__btn {
+    padding: 5px;
+    font-size: 10px;
+  }  
+}
